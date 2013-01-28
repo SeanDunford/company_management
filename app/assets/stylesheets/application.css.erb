@@ -1,0 +1,180 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body, html, header {
+	margin:0;
+	width:100%;
+	height:100%;
+	font-family:'Oxygen', sans-serif;
+	background:url(<%= asset_path 'background.jpg' %>);
+	font-size:14px;
+}
+
+header {
+	background:#009d8d;
+	height:52px;
+	box-shadow:0px 2px 5px #333;
+	z-index:99;
+	display:block;
+	position:relative;
+	top:0;
+	left:0;
+}
+
+h1 {
+	color:#545454;
+	font-family:'Playball', serif;
+	font-size:28px;
+}
+
+#showcompany h2.drop_title {
+	font-size:14px;
+	font-weight:normal;
+	padding:10px 0 10px 15px;
+	margin:0 -10px;
+	border-bottom:1px solid #CCC;
+	color:#999;
+}
+
+#showcompany h2.drop_title:hover {
+	background-color:#f6f6f6;
+}
+
+a h2 {
+	font-size:14px;
+	font-weight:normal;
+	padding:20px 0 20px 15px;
+	margin:0 -10px;
+	border-bottom:1px solid #CCC;
+}
+
+a h2:hover {
+	background-color:#f6f6f6;
+}
+
+a h2 {
+	color:#999;
+}
+
+label {
+	color:#009d8d;
+	font-size:12px;
+	margin:0 0 0 2px;
+}
+
+a {
+	text-decoration:none;
+	color:#009d8d;
+}
+
+input {
+	margin-top:10px;
+	border-radius:5px;
+	height:20px;
+	border:1px solid #CCC;
+	background-color:#f2f2f2;
+	padding:5px;
+}
+
+div.logo {
+	float:left;
+	margin:10px;
+}
+
+div.links {
+	float:right;
+	margin:7px 6px auto auto;
+}
+
+.link {
+	color:#333;
+	background-color:#f2f2f2;
+	border:1px solid #CCC;
+	text-decoration:none;
+	font-size:12px;
+	padding:10px;
+	border-radius:5px;
+	width:65px;
+	text-align:center;
+	float:left;
+	margin-left:10px;
+	cursor:pointer;
+}
+
+.link:hover {
+	background-color:#FFF;
+}
+
+.left_side {
+	width:200px;
+	border:1px solid #CCC;
+	background:#FFF;
+	z-index:98;
+	position:absolute;
+	top:50;
+	left:-1px;
+	margin:0;
+	padding:0 10px 10px 10px;
+	height:100.25%;
+	float:left;
+}
+
+.content {
+	width:80%;
+	z-index:98;
+	position:absolute;
+	top:50;
+	left:220px;
+}
+
+.content header {
+	background:none;
+	width:none;
+	box-shadow:none;
+	padding-left:20px;
+}
+
+.content .wrapper {
+	padding-left:20px;
+}
+
+.clearfix:after {
+	content:'.';
+	height:0px;
+	visibility:hidden;
+	clear:both;
+}
+
+.edit_comp {
+	margin:0 10px 0 0;
+}
+.hidden_head { position:absolute; top:0px; left:202px; cursor:pointer; width:18px; height:39px; background-image:url(<%= asset_path 'ddArrow.jpg' %>); }
+.hidden_head:hover { background-image:url(<%= asset_path 'ddArrow2.jpg' %>); }
+.hidden { display:none; position:absolute; width:219px; z-index:1; background:#FFF; border:1px solid #CCC; top:39px; left:0px; overflow:hidden; }
+
+.sign_btn {
+	padding:5px;
+	border:1px solid #CCC;
+	background-color:#f2f2f2;
+	height:16px;
+	margin-top:15px;
+	margin-left:-20px;
+	border-radius:5px;
+	color:#333;
+	text-decoration:none;
+	font-family:'Oxygen';
+	font-size:12px;
+	font-weight:none;
+	float:left;
+}
