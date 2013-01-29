@@ -1,5 +1,8 @@
 class OrganizationsController < ApplicationController
-	# Prerequisites
+# =================================
+# Prerequisites
+# =================================
+	before_filter :authenticate_user!
 
 # =================================
 # organizations#index
