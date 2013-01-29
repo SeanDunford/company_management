@@ -9,4 +9,8 @@ Timesheet::Application.routes.draw do
   # Create the /dashboard url to go to Users/Index
   match '/dashboard', :to => 'users#index'
 
+  resources :users do
+  	resources :organizations
+  end
+
 end

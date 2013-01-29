@@ -1,4 +1,17 @@
-<h2>Users Index</h2>
+<h1>Hello!</h1>
+<p>Please choose an option below</p>
+
+<h3>Your Organizations</h3>
+<% current_user.organizations.each do |o| %>
+	<%= link_to user_organization_path( current_user, o) do %>
+		<p><%= o.name %></p>
+	<% end %>
+<% end %>
+<div class="link">
+	<span>	
+		<%= link_to 'New Organization', new_user_organization_path( current_user ) %>
+	</span>
+</div><br />
 <div class="link">
 	<span>	
 		<%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %>
