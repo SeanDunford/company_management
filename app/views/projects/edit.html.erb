@@ -1,0 +1,8 @@
+<h2><%= @project.title %> - <%= @organization.name %></h2>
+<p>Editing project</p>
+
+<%= simple_form_for( [@organization, @project] ) do |f| %>
+	<%= f.input :title, label: 'Project title: ' %>
+	<%= f.input :description, as: :text, label: 'Project Description: ' %>
+	<%= f.button :submit %>
+<% end %>

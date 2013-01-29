@@ -4,5 +4,16 @@
 		<%= link_to 'Edit Organization', edit_user_organization_path( current_user, @organization ) %>
 	</span>
 </div>
-<!-- Why is this breaking the application? -->
-<%= button_to 'Destroy Organization', user_organization_path( @organization ), confirm: 'Are you sure?', method: :delete %>
+		<%= button_to 'Destroy Organization', user_organization_path( @organization ), confirm: 'Are you sure?', method: :delete %>
+<br /><br />
+<h2 class='clear'>Projects</h2>
+<% @organization.projects.each do |project| %>
+	<%= link_to organization_project_path( @organization, project ) do %>
+		<p><%= project.name %></p>
+	<% end %>
+<% end %>
+<div class="link">
+	<span>
+		<%= link_to 'New Project', new_organization_project_path( @organization ) %>
+	</span>
+</div>

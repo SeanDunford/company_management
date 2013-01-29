@@ -1,0 +1,6 @@
+<h2>New Project - <%= @organization.name %></h2>
+<%= simple_form_for ([ @organization, @project ]) do |f| %>
+	<%= f.input :title, label: 'Project Title' %>
+	<%= f.input :description, as: :text %>
+	<%= f.button :submit %>
+<% end %>
