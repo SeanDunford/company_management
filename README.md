@@ -7,9 +7,9 @@ This application is a combination of general company management. We will be mana
 
 Primary Contributors
 ------------------
-[Matt Wagner](https://github.com/alphastory)
-[Alex Overbeck](https://github.com/AlexOverbeck)
-[Sean Dunford](https://github.com/SeanDunford)
+[Matt Wagner](https://github.com/alphastory)  
+[Alex Overbeck](https://github.com/AlexOverbeck)  
+[Sean Dunford](https://github.com/SeanDunford)  
 
 Specs and Technology
 ------------------
