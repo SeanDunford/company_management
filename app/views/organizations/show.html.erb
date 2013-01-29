@@ -5,4 +5,4 @@
 	</span>
 </div>
 <!-- Why is this breaking the application? -->
-<%#= button_to 'Destroy Organization', @organization, confirm: 'Are you sure?', method: :delete %>
+<%= button_to 'Destroy Organization', user_organization_path( @organization ), confirm: 'Are you sure?', method: :delete %>

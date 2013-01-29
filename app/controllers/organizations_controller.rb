@@ -64,7 +64,7 @@ class OrganizationsController < ApplicationController
 # =================================
 # organizations#destroy
 # =================================
-	def delete
+	def destroy
 
 		# Find the Organization
 		@organization = Organization.find( params[:id] )
