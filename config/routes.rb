@@ -4,7 +4,7 @@ Timesheet::Application.routes.draw do
   devise_for :users
 
   # Set the root of the application
-  root :to => "home#index"
+  root :to => "users#index"
 
   # Create the /dashboard url to go to Users/Index
   match '/dashboard', :to => 'users#index'
