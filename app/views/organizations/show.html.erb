@@ -1,0 +1,8 @@
+<h2><%= @organization.name %></h2>
+<div class="link">
+	<span>	
+		<%= link_to 'Edit Organization', edit_user_organization_path( current_user, @organization ) %>
+	</span>
+</div>
+<!-- Why is this breaking the application? -->
+<%= button_to 'Destroy Organization', user_organization_path( @organization ), confirm: 'Are you sure?', method: :delete %>

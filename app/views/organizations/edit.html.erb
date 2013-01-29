@@ -1,0 +1,7 @@
+<h2><%= @organization.name %></h2>
+<p>Edit your organization.</p>
+
+<%= simple_form_for([current_user, @organization]) do |f| %>
+	<%= f.input :name, label: 'Organization Name:', required: true %>
+	<%= f.button :submit %>
+<% end %>

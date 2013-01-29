@@ -1,0 +1,52 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+	width:95%;
+	margin:0 auto;
+}
+
+.sign_btn {
+	padding:5px;
+	border:1px solid #CCC;
+	background-color:#f2f2f2;
+	height:16px;
+	margin-top:15px;
+	margin-left:10px;
+	border-radius:5px;
+	color:#333;
+	text-decoration:none;
+	font-family:'Oxygen';
+	font-size:12px;
+	font-weight:none;
+	float:left;
+}
+
+.fyp {
+	margin-top:-4px;
+}
+
+.sign_btn:hover {
+	background:#FFF;
+}
+
+.signin_btn {
+	margin:15px 0 5px 0;
+	cursor:pointer;
+	border:1px solid #CCC;
+	color:#333;
+	font-family:'Oxygen';
+	font-size:12px;
+	height:28px;
+	float:left;
+}
+
+.signin_btn:hover {
+	background:#FFF;
+}
+
+.innerCont {
+	width:22.5%;
+	margin:0 auto;
+}
